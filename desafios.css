@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto & display = swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+	font-family: 'Inria Sans', sans-serif;
+    background-color: #ECECEC;
+}
+
+header {
+	background: white;
+    border-bottom: solid 2px rgb(176, 176, 176);
+	padding: 20px auto;
+}
+
+.caixa {
+	position: relative;
+    margin-right: 10%;
+}
+.logo{
+    width: 317px;
+    height: 248px;
+    top: 0px;
+    left: 0px;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+    right: 0%;
+    margin: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #2b2b2b;
+	font-weight: bold;
+	font-size: 28px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #c7197e;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+    margin: 2%;
+    text-transform: uppercase;
+}
+.secao-principal {
+    padding: 3em 0;
+}
+.conteudo-principal {
+    width: 840px;
+    margin: 0 auto;
+}
+.div-principal {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+.imagem-principal {
+	height: 30%;
+	opacity: 1;
+	transition: 400ms;
+    margin-left: 5%;
+
+}
+
+h3{
+    text-align: center;
+    margin: 5%;
+    font-size: 28px;
+}
+.texto-desafio{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.conteudo-desafios {
+    width: 540px;
+    margin: 0 auto;
+}
+.section-desafios{
+    background: linear-gradient(#FF6231,#FF8989,#FEA5A5, #FFB9B9, #ECECEC);
+}
+.texto-dados{
+    margin: 15%;
+    margin-top: 5%;
+    width: 600px;
+}
+.img-dados{
+    width: 552px;
+    height: 470px;
+    background: url(img/dados.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.7;
+    bottom: 15%;
+    position: absolute;
+    overflow: hidden;
+}
+footer{
+    text-align: center;
+    background: #7E9BFF;
+    padding: 15px 0;
+ 
+}
+.texto{
+    color: #FFFFFF;
+    font-weight: bold;
+	font-size: 18px;
+}
