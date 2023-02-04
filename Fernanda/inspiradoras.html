@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Girl Space</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Roboto & display = swap" rel="stylesheet">
+</head>
+<body class="h-screen">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src="public/img/logoTransp.png" alt="logo">
+            </div>
+            <div class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Quem Somos nós?</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Oportunidades</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Motivação</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Inscreva-se</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div id="secao-blog">
+            <section id="banner" class="bg-red-600 py-0 px-0">
+                <div style="background: url('public/img/inspiradoras.jpeg'); background-position: top; background-size: cover;"class="flex h-[26rem] justify-center">
+
+                </div>
+            </section>
+            <section class="px-5 py-10 md:py-10"> 
+                <div class="max-w-screen-xl mx-auto">
+                    <div class="flex items-center">
+                        <div class="rounded-full">
+                            <img src="/public/img/icons/fernanda.png" alt="" class="max-h-[3rem] max-w-[3rem] h-[3rem] rounded-full">
+                        </div>
+                        <div class="flex-col">
+                            <div class="px-3 text-2xl text-gray-900">
+                                Fernanda
+                            </div>
+                            <div class="px-3 text-sm text-gray-500">
+                                Fev 04, 2023 · 5 min de leitura
+
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="py-4">
+                    
+                        <h2 class="text-2xl md:text-4xl text-gray-900 font-semibold">
+                           Mulheres Inspiradoras
+                        </h2>
+                        <p class="text-sm md:text-lg text-gray-600 py-3 mb-1/20">
+                            Dentro da área da tecnologia, as mulheres sentem muita dificuldade que se estabelecer em uma área extremamente masculinizado. Porém, muitas conseguiram quebrar as barreiras do machismo, racismo e do preconceito e são reconhecidas até hoje pelo seus feitos à tecnologia. Então veja, as mulheres inspiradoras na tecnologia. 
+                        </p>
+                        <h2 class="text-2xl md:text-4xl text-gray-900 font-semibold py-3">
+                            Ada Lovelace
+                        </h2>
+                        <img style="width: 120px; float: left; margin: 0 20px 20px 0;" src="public/img/Ada-Lovelace.png" alt="Foto de Ada Lovelace">
+                        <p class="text-sm md:text-lg text-gray-600 py-3 mb-10">
+                            Considearada mãe da computação, Ada King Lovelace idealizou o primeiro programa computacional. EM meados do século XIX, ela analisou e traduziu diversos materiais dos matemáticos da época e, a partir disso, ajudou no desenvolvimento do primeiro algoritmo do mundo.
+                        </p>
+                        <h2 class="text-2xl md:text-4xl text-gray-900 font-semibold py-3">
+                            Carol Shaw
+                        </h2>
+                        <img style="width: 120px; float: left; margin: 0 20px 20px 0;" src="public/img/Carol-Shaw.png" alt="Foto de Carol Shaw">
+                        <p class="text-sm md:text-lg text-gray-600 py-3 mb-10">
+                            Considerada a primeira mulher desenvolvedora de jogos digitais. Responsável por criar softwares para jogos e consoles, ela é a idealizadora das “fases” dos jogos de videogame que vão gradualmente aumentando a dificuldade. Ela também foi uma das primeiras colaboradoras da marca de consoles Atari e trabalhou em  desenvolvedoras, como a Actvision.
+                        </p>
+                        <h2 class="text-2xl md:text-4xl text-gray-900 font-semibold py-3">
+                            Katherine Johnson
+                        </h2>
+                        <img style="width: 120px; float: left; margin: 0 20px 20px 0;" src="public/img/Katherine-Johnson.png" alt="Foto de Katherine Johnson">
+                        <p class="text-sm md:text-lg text-gray-600 py-3 mb-10">
+                            Katherine Johnson foi a primeira mulher negra a entrar em um curso de pós-graduação na universidade de West Virginia. Formada em matemática, trabalhou por anos na NACA (a atual NASA) e foi uma das responsáveis pelos cálculos da trajetória de voo do foguete Apolo 11 para o primeiro pouso na lua.
+                        </p>
+                        <h2 class="text-2xl md:text-4xl text-gray-900 font-semibold py-3">
+                            Grace Hopper
+                        </h2>
+                        <img style="width: 120px; float: left; margin: 0 20px 20px 0;" src="public/img/Grace-Hopper.png" alt="Foto de Grace Hopper">
+                        <p class="text-sm md:text-lg text-gray-600 py-3 mb-10">
+                            Ela foi a primeira mulher a ter um PhD em Matemática na universidade de Yale, trabalhou na área de tecnologia da marinha estadunidense e foi uma das criadoras da linguagem de programação COBOL, uma das utilizadas nos bancos de dados do mundo dos negócios, auxiliou na criação do primeiro computador comercializado para o público, chamado de UNIVAC e criou o termo BUG quando descobriu um inseto (mariposa) preso no Mark II.
+                        </p>
+                        <h2 class="text-2xl md:text-4xl text-gray-900 font-semibold py-3">
+                            Conclusão
+                        </h2>
+                        <p class="texto" class="text-sm md:text-lg text-gray-600 py-3">
+                           Elas foram alguns exemplos de grandes mulheres que mudaram a história da tecnologia. Você pode estar passando por alguma dificuldade, mas assim como elas, <strong>NÃO DESISTA</strong>, você tem a mesma capacidade que qualquer outra pessoa, e deve se manter firme, com resiliência e dedicação. Assim, você também pode <strong>mudar a história da tecnologia e o mundo .</strong> 
+                        </p>
+                    </div>
+                </div>
+            </section>
+ 
+            <footer class="bg-gray-50 border-t border-gray-200 px-4">
+                <div class="max-w-screen-xl mx-auto py-5 md:py-10">
+                    <div class="grid grid-cols-1 md:grid-cols-12 py-5 space-y-10 md:space-y-0 gap-40">
+                        <div class="md:col-span-4">
+                            <a href="" class="mb-5">
+                                <img src="../public/img/logoTransp.png" width="212" alt="logo">
+                            </a>
+                            <p class="text-gray-400 mt-5">
+                                Venha nos ajudar com essa missão.
+                                <br/>
+                                Empodere a mulher.
+                                <br/>
+                            </p>
+                        </div>
+                        <div class="md:col-span-2 flex flex-col space-y-2">
+                            <h5 class="text-indigo-600 font-bold mb-2">Blog</h5>
+                            <a href="#" class="text-gray-800">Todos os posts</a>
+                            <a href="#" class="text-gray-800">Sobre nós</a>
+                            <a href="#" class="text-gray-800">Contato</a>
+                            <a href="#" class="text-gray-800">Termos &amp; Condições</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        console.log(navLinks)
+        function onToggleMenu(e){
+            
+            if (e.name == "menu"){
+                e.name = "close"
+                navLinks.classList.add('top-[9%]')
+                navLinks.classList.remove('top-[-100%]')
+            } else {
+                e.name = "menu"
+                navLinks.classList.add('top-[-100%]')
+                navLinks.classList.remove('top-[9%]')
+            }
+  
+        };
+    </script>    
+</body>
+</html>
