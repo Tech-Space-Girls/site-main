@@ -3,103 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <title>Tech Girl Space</title>
+    <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="cursos_vagas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2?family= Roboto & display = swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="caixa">
-            <h1>
-                <img class="logo" src="img/logo.png" alt="logo Tech Girl Space">
-            </h1>
-            <nav>
-                <ul>
+<body class="h-screen">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-16 cursor-pointer" src="../public/img/logoTransp.png" alt="logo">
+            </div>
+            <div class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a class="hover:text-gray-500" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="sobre.html">Sobre</a>
+                        <a class="hover:text-gray-500" href="#">Quem Somos nós?</a>
                     </li>
                     <li>
-                        <a href="contato.html">Contato</a>
+                        <a class="hover:text-gray-500" href="#">Oportunidades</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Motivação</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Contato</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Inscreva-se</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
     </header>
     <main>
-        <h2>Cursos/Vagas para mulheres em Tech</h2>
-        <section>
-            <div class="conteiner">
-                <img class="img" src="img/elas-tech.png" alt="Logo Elas em Tech">
-                <ul class="lista">
-                    <li>
-                        <h3>Geração Elas em Tech</h3>
-                    </li>
-                    <li>
-                        <p class="texto-principal">OLX Brasil disponibiliza vagas para mulheres cis e trans na área de Engenharia, sendo que a metade é destinada a candidatas em situação de vulnerabilidade social.</p>
-                    </li>
-                    <li>
-                        <a class="link-conteudo" href="https://www.ciadeestagios.com.br/vagas/olxbrasil/">Saiba Mais</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div class="conteiner">
-                <img class="img" src="img/reprograma.png" alt="Logo reprograma">
-                <ul class="lista">
-                    <li>
-                        <h3>Reprograma</h3>
-                    </li>
-                    <li>
-                        <p class="texto-principal">Iniciativa de impacto social que foca em ensinar programação para mulheres cis e trans que não têm recursos ou oportunidades para aprender a programar.</p>
-                    </li>
-                    <li>
-                        <a class="link-conteudo" href="https://reprograma.com.br/">Saiba Mais</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div class="conteiner">
-                <img class="img" src="img/minasprogramam.png" alt="Logo Minas Programam">
-                <ul class="lista">
-                    <li>
-                        <h3>Minas Programam</h3>
-                    </li>
-                    <li>
-                        <p class="texto-principal">O Minas Programam é uma iniciativa para desafiar os estereótipos de gênero e de raça que influenciam nossa relação com as áreas de ciências, tecnologia e computação.</p>
-                    </li>
-                    <li>
-                        <a class="link-conteudo" href="https://minasprogramam.com/">Saiba Mais</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div class="conteiner">
-                <img class="img" src="img/Orbi-Web.png" alt="Logo Órbi Web Games Developer">
-                <ul class="lista">
-                    <li>
-                        <h3>Órbi Web Games Developer</h3>
-                    </li>
-                    <li>
-                        <p class="texto-principal">É um programa para iniciar a carreira em desenvolvimento de games, com a edição especial para mulheres, estimulando a participação mulheres no ambiente tecnológico.</p>
-                    </li>
-                    <li>
-                        <a class="link-conteudo" href="https://www.dio.me/bootcamp/orbi-web-game-developer?utm_source=pr-bc-orbi-game-developer&utm_medium=pay&utm_campaign=orbi">Saiba Mais</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <img src="img/logo.png" alt="Logo Tech Girl Space">
-        <p class="texto">Tech Girl Space</p>
-
-    </footer>
+        <div id="secao-blog">
+            <section id="banner" class="bg-red-600 py-0 px-0">
+                <div style="background: url('public/img/cursos_vagas.jpeg'); background-position: center; background-size: cover;" class="flex h-[26rem] bg-cover bg-center justify-center">
+                </div>
+            </section>
+            <section class="px-5 py-10 md:py-10"> 
+                <div class="max-w-screen-xl mx-auto">
+                    <div class="items-center">
+                        <div class="rounded-full">
+                            <img src="/public/img/icons/fernanda.png" alt="" class="max-h-[3rem] max-w-[3rem] h-[3rem] rounded-full">
+                        </div>
+                        <div class="flex-col">
+                            <div class="px-3 text-2xl text-gray-900">
+                                Fernanda
+                            </div>
+                            <div class="px-3 text-sm text-gray-500">
+                                Fev 04, 2023 · 5 min de leitura
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <section>
+                    <h2>Cursos/Vagas para Mulheres em Tech</h2>
+                    <div class="conteiner">
+                        <img class="img" src="public/img/elas-tech.png" alt="Logo Elas em Tech">
+                        <ul class="lista">
+                            <li>
+                                <h3>Geração Elas em Tech</h3>
+                            </li>
+                            <li>
+                                <p class="texto-principal">OLX Brasil disponibiliza vagas para mulheres cis e trans na área de Engenharia, sendo que a metade é destinada a candidatas em situação de vulnerabilidade social.</p>
+                            </li>
+                            <li>
+                                <a class="link-conteudo" href="https://www.ciadeestagios.com.br/vagas/olxbrasil/">Saiba Mais</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="conteiner">
+                        <img class="img" src="public/img/reprograma.png" alt="Logo reprograma">
+                        <ul class="lista">
+                            <li>
+                                <h3>Reprograma</h3>
+                            </li>
+                            <li>
+                                <p class="texto-principal">Iniciativa de impacto social que foca em ensinar programação para mulheres cis e trans que não têm recursos ou oportunidades para aprender a programar.</p>
+                            </li>
+                            <li>
+                                <a class="link-conteudo" href="https://reprograma.com.br/">Saiba Mais</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="conteiner">
+                        <img class="img" src="public/img/minasprogramam.png" alt="Logo Minas Programam">
+                        <ul class="lista">
+                            <li>
+                                <h3>Minas Programam</h3>
+                            </li>
+                            <li>
+                                <p class="texto-principal">O Minas Programam é uma iniciativa para desafiar os estereótipos de gênero e de raça que influenciam nossa relação com as áreas de ciências, tecnologia e computação.</p>
+                            </li>
+                            <li>
+                                <a class="link-conteudo" href="https://minasprogramam.com/">Saiba Mais</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="conteiner">
+                        <img class="img" src="public/img/Orbi-Web.png" alt="Logo Órbi Web Games Developer">
+                        <ul class="lista">
+                            <li>
+                                <h3>Órbi Web Games Developer</h3>
+                            </li>
+                            <li>
+                                <p class="texto-principal">É um programa para iniciar a carreira em desenvolvimento de games, com a edição especial para mulheres, estimulando a participação mulheres no ambiente tecnológico.</p>
+                            </li>
+                            <li>
+                                <a class="link-conteudo" href="https://www.dio.me/bootcamp/orbi-web-game-developer?utm_source=pr-bc-orbi-game-developer&utm_medium=pay&utm_campaign=orbi">Saiba Mais</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-gray-50 border-t border-gray-200 px-4">
+                <div class="max-w-screen-xl mx-auto py-5 md:py-10">
+                    <div class="grid grid-cols-1 md:grid-cols-12 py-5 space-y-10 md:space-y-0">
+                        <div class="md:col-span-4">
+                            <a href="" class="mb-5">
+                                <img src="public/img/logoTransp.png" width="212" alt="logo">
+                            </a>
+                            <p class="text-gray-400 mt-5">
+                                Venha nos ajudar com essa missão.
+                                <br/>
+                                Empodere a mulher.
+                                <br/>
+                            </p>
+                        </div>
+                        <div class="md:col-span-2 flex flex-col space-y-2">
+                            <h5 class="text-indigo-600 font-bold mb-2">Blog</h5>
+                            <a href="#" class="text-gray-800">Todos os posts</a>
+                            <a href="#" class="text-gray-800">Sobre nós</a>
+                            <a href="#" class="text-gray-800">Contato</a>
+                            <a href="#" class="text-gray-800">Termos &amp; Condições</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        console.log(navLinks)
+        function onToggleMenu(e){
+            
+            if (e.name == "menu"){
+                e.name = "close"
+                navLinks.classList.add('top-[9%]')
+                navLinks.classList.remove('top-[-100%]')
+            } else {
+                e.name = "menu"
+                navLinks.classList.add('top-[-100%]')
+                navLinks.classList.remove('top-[9%]')
+            }
+  
+        };
+    </script>    
 </body>
 </html>
