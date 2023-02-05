@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 [ZoneTransfer]
 ZoneId=3
 HostUrl=https://labs.openai.com/
+=======
+[ZoneTransfer]
+ZoneId=3
+HostUrl=https://labs.openai.com/
+>>>>>>> 4c0a286ebd1984713642a792ee3c94860d439c1f
