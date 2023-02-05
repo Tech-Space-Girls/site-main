@@ -5,7 +5,13 @@ module.exports = {
     "./index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "desafios": "url('/public/img/desafios.png')",
+        "inspiradoras": "url('/public/img/inspiradoras.png')",
+        "cursosVagas": "url('/public/img/cursos/cursos_vagas.jpg')"
+      }
+    },
   },
   plugins: [],
 };
