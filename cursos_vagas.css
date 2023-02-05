@@ -51,6 +51,7 @@ nav a:hover {
 }
 h2{
     text-align: center;
+    margin-top: 0;
     margin: 4%;
     text-transform: uppercase;
 }
